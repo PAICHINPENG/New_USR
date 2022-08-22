@@ -1,0 +1,303 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+</script>
+	<title>第四個點 來跟土地公伯伯抽藥籤</title>
+</head>
+<script type="text/javascript">
+    var tal = 0;
+    var intervalsd;
+    var isover = "y";
+
+    var talB = 0;
+    var intervalsdB;
+    var isoverB = "y";
+
+    var finalsd = 0;
+
+    var goodsd = 0;
+
+    var deg = 0;
+//點籤筒 
+function startgo() {
+    
+    if (isover == "y") {
+         tal = 0;
+         intervalsd = setInterval(function () { runno() }, 30);
+         divineindex.style.display = "block";
+         ImgA.style.display = "none";
+         ImgB.style.display = "none";
+         txtresult.style.display = "none";
+
+     }
+}
+//直搖
+function startgoB(){
+    if (isoverB =="y") {
+      talB = 0;
+      intervalsdB = setInterval(function(){runnoB() },30);
+      ImgA.style.display= 'block';
+      ImgB.style.display= 'block';
+    }
+    audio = document.getElementById('')
+}
+//抽籤動畫
+function runno(){
+
+var err = 0;
+var max = 60;
+var min = 1;
+var draw = [1,36,41,54,58,66,83,99,101,108];
+
+var rand = Math.floor(Math.random()*draw.length);
+var rValue = draw[rand];
+
+
+
+isover = "n";
+var n1 = Math.floor(Math.random() * (max - min + 1)) + min;
+divineindex.innerHTML = "求得"+"<br>"+ rValue +" 號籤";
+   if (deg == 3) {
+            deg = 4;
+            document.getElementById("divinetool").style.transform = "rotate(15deg)";
+        }
+        if (deg == 2) {
+            deg = 3;
+            document.getElementById("divinetool").style.transform = "rotate(-15deg)";
+        }
+        if (deg == 1) {
+            deg = 2;
+            document.getElementById("divinetool").style.transform = "rotate(-15deg)";
+        }
+        if (deg == 0) {
+            deg = 1;
+            document.getElementById("divinetool").style.transform = "rotate(15deg)";
+        }
+        if (deg >= 4) { deg = 0; }
+        tal = tal + 1;
+        if (tal >= 150 && err == 0) {
+            clearInterval(intervalsd);
+            finalsd = rValue;
+            //isover = "y";
+            btn.style.display = "block";
+            //divinetool.style.display = "none";
+            document.getElementById("divinetool").style.transform = "rotate(0deg)";
+
+        }
+
+
+}
+//擲爻判斷
+function runnoB() {
+        var err = 0;
+        var maxNum = 2;
+        var minNum = 1;
+        isoverB = "n"
+        var n1 = Math.floor(Math.random() * (maxNum - minNum + 1)) + minNum;
+        var n2 = Math.floor(Math.random() * (maxNum - minNum + 1)) + minNum;
+        
+        //divno = leftPad(n1, 2);
+        if (n1 == 1) { ImgA.src = "image/cup1.png"; }
+        if (n1 == 2) { ImgA.src = "image/cup2.png"; }
+
+        if (n2 == 1) { ImgB.src = "image/cup3.png"; }
+        if (n2 == 2) { ImgB.src = "image/cup4.png"; }
+
+        talB = talB + 1;
+        if (talB >= 50 && err == 0) {
+            clearInterval(intervalsdB);
+            isoverB = "y";
+            txtresult.style.display = "block";
+
+            if (n1 == 1 && n2 == 2) {
+                goodsd = goodsd + 1;
+                txtresult.innerHTML = "第" + finalsd + "號籤<BR>" + goodsd + "個允杯<br>請繼續筊杯";
+            }
+            if (n1 == 1 && n2 == 1) {
+                txtresult.innerHTML = "笑杯<br>請按籤筒重新求籤";
+                isover = "y";
+                divinetool.style.display = "block";
+                btn.style.display = "none";
+                divineindex.innerHTML = "請點籤筒";
+
+                goodsd = 0;
+
+            }
+            if (n1 == 2 && n2 == 1) {
+                goodsd = goodsd + 1;
+                txtresult.innerHTML = "第" + finalsd + "號籤<BR>" + goodsd + "個允杯<br>請繼續筊杯";
+            }
+            if (n1 == 2 && n2 == 2) {
+                txtresult.innerHTML = "蓋杯<br>請按籤筒重新求籤";
+                isover = "y";
+                divinetool.style.display = "block";
+                btn.style.display = "none";
+                divineindex.innerHTML = "請點籤筒";
+
+                goodsd = 0;
+            }
+            
+            if (goodsd >= 1) {
+                btn.style.display = "none";
+                txtresult.innerHTML = goodsd + "個允杯<br>請觀看以下籤詩";
+                divineroom.style.display = "block";
+                divpic.src = "image/" + "87" + ".jpg";
+                if (finalsd >=50) {
+                  console.log("上上");
+                }
+                else if (finalsd<50) {
+                  console.log("下下");
+                }
+                //gotourl.href = "divine" + finalsd + ".asp";
+            }
+
+
+
+        }
+}
+$(function(){
+  $("#header").load("header.html"); 
+});
+
+</script>
+<body class="bd">
+  <audio id="aaa" src=""></audio>
+  <div id="header"></div>
+ <audio src="Shallow.mp3" loop></audio>
+
+<style type="text/css">
+  .bd{
+    font-size: 150%;
+  }
+  @media screen and (min-width:1024px){
+    .bd{
+      background-color: skyblue;
+    }
+
+  }
+  @media screen and (max-width:800px){
+    .bd{
+       width: 100%;
+      background-color: yellow;
+        overflow-x: hidden; 
+        font-size: 150%;
+    }
+      .draw{
+        margin-left:25%;
+    }
+    .draw span{
+      margin-left: 25%;
+      font-color:black;
+    }
+    #btn{
+      width: 100%;
+    }
+    #ImgB{
+       
+    }
+    #divineindex{
+      margin-left:35%;
+
+    }
+  }
+</style>
+<div class="illustrate" style="font-size: 15px;">
+  <img src="image/in.jpg" width="300px" height="300px" style="">
+</div>
+<span id="divineindex" class="ss" style="display:block">請點籤筒</span>
+	<div class="draw">
+		
+		<img id="divinetool"  src="image/box.png" style="weight:220px;height:240px ;float:none;" class="ig" onclick="startgo();" >
+	</div>
+<button 
+
+id="btn" style="font-size:18px;font-weight:bold;display:none;border-radius: 50%; background-color: blue;color: white;" onclick="startgoB()">進行爻杯</button>
+
+<div class="row">
+<div class="col">
+  <img id="ImgA" src="" style="display: none; width: 100px;height: 100px;">
+</div>
+
+<div class="col">
+  <span style="color:white;background-color:#c20000;font-size:18px;font-weight:bold;display:none" id="txtresult">擲杯結果
+</span>   
+  </div>
+<div class="col">
+    <img id="ImgB" src="" style="display: none;width: 100px;height: 100px;">
+</div>
+
+</div>
+<div id="divineroom" style="width: 100%;text-align:center;display:none">
+     <img id="divpic" src="USR/image/87.jpg" style="margin:auto;" width="100%" alt="" />
+      <a id="gotourl" href="#" class="button primary" style="font-size:18px;font-weight:bold;width:100%">觀看籤詩說明</a>
+</div>
+
+
+
+</body>
+</html>
+<style type="text/css">
+<style>
+.container {
+  position: relative;
+  text-align: center;
+  color: black;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left:200px;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+</style>
+<script type="text/javascript">
+
+function processFormData(){
+  var name = document.getElementById('name').value;
+  document.getElementById('nn').innerHTML = name ;
+  document.getElementById('ig').src = '圖片1.png';
+}
+
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>

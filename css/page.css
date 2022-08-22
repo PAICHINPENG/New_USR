@@ -1,0 +1,209 @@
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* ---------------------------------- */
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    text-decoration: none;
+    /* outline: 1px solid black; */
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+h2{
+    font-size: 150%;
+    font-weight: bold;
+    padding: 5%;
+    color: #f5e5c7;
+}
+h3{
+    font-size: 150%;
+    font-weight: bold;
+
+    padding-left: 5%;
+    color: #f5e5c7;
+
+}
+p{
+    /* text-align: center; */
+    padding: 2%;
+    font-weight: bold;
+
+}
+
+
+body{
+    background-color: #e6dcc1;
+    font-family: 微軟正黑體;
+    color: #4c756f;
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+    font-size: 150%;
+}
+.wrap{
+    
+    margin: 0 auto;
+    max-width: 1140px;
+    background-color: #4c756f;
+    padding-bottom: 50px;
+    
+}
+.introduce{
+    background-color: aliceblue;
+    border-radius: 10px;
+    margin: 2%;
+}
+.godintrodisplay{
+    display: flex;
+    padding: 3%;
+}
+.godpic{
+    width: auto;
+    height: auto;
+   
+    /* padding: 2%; */
+    border-radius: 10px;
+}
+.godintro1{
+    padding-left: 2%;
+}
+.godintro{
+    padding: 3%;
+}
+
+@media screen and (max-width:800px){
+    .draw{
+    margin-left: 20px;
+    }
+    #btn{
+        margin-left: 36%;
+    }
+ 
+     #divinetool{
+        width: 300px;
+        height:330px;
+    }
+       /*intro image*/
+    .in{
+        width: 300px;
+        height: 300px;
+    }
+
+
+}
+
+@media screen and (min-width:1024px){
+    .draw{
+        margin-left: 28%;
+    }
+    #btn{
+        margin-left:47%;
+    }
+    .ss{
+         margin-left:46%;
+    }
+    #ImgA, #ImgB{
+        width:500px;
+        height: 500px;
+    }
+   
+    #divinetool{
+        width: 500px;
+        height:560px;
+    }
+    /*intro image*/
+    .in{
+        width: 400px;
+        height: 400px;
+    }
+  
+
+}
+
+.game{
+    
+    background-color: aliceblue;
+    margin: 2%;
+    border-radius: 10px;
+    /*background-image: url("../pic/bdk1.png");
+    background-size:100% 100%;*/
+   
+}
+.circle{
+    display: flex;
+    justify-content: end;
+    
+}
+.clue{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: #e6dcc1;
+    text-align: center;
+    line-height: 90px;
+    font-weight: bold;
+    font-size: 40px;
+    padding: 1px;
+    margin: 3%;
+    
+}
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About

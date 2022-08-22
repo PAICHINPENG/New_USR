@@ -1,0 +1,27 @@
+
+
+.main {
+  width: 50vw;
+  height: 50vw;
+  padding: 1vw;
+  background: #fff; }
+
+.wrap {
+  width: 100%;
+  height: 100%;
+  position: relative; }
+
+.grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 9vw;
+  font-weight: bold;
+  color: #fff;
+  position: absolute;
+  background: #ff6500;
+  transition: .2s ease; }
+  .grid-active {
+    z-index: 1;
+    opacity: .6;
+    background: #993d00; }

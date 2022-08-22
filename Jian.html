@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+</script>
+<script src="https://kit.fontawesome.com/aad679a23e.js" crossorigin="anonymous"></script>
+    <title>吉安土地公導覽網站</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<script type="text/javascript">
+    $(function(){
+  $("#header").load("header.html"); 
+});
+
+        
+     
+</script>
+<body>
+      <audio class="aud" src="Shallow.mp3" loop></audio>
+      <!--<button class="bbb">play</button>-->
+      <div id="header"></div>
+    <div class="wrap">
+        <img src="pic/mainview.jpg" alt="主視覺1" class="mainview" >
+        <img src="pic/mainview2.png" alt="主視覺2" class="mainview2" >
+        <div class="story">
+            <p class="p01">很久以前...<br>有個年輕人叫阿寶<br>他是東昌福德祠廟公的兒子<br>有天晚上睡覺時......</p>
+            <img src="pic/cloud01.png" alt="cloud01" class="cloud1">
+            <p class="p01">被東昌福德祠的土地公託夢<br>告訴他農曆2月2日是祂的誕辰<br>希望阿寶能幫祂辦生日</p>
+            <img src="pic/cloud02.png" alt="cloud02" class="cloud2">
+            <p class="p01">然而土地公沒具體說要怎麼做<br>就一溜煙的離開了<br>跑去找其他土地公玩了</p>
+            <img src="pic/cloud01.png" alt="cloud01" class="cloud3">
+            <p class="p01">阿寶正苦惱之時...<br>他的爸爸告訴他<br>可以到吉安鄉的土地公廟尋找線索</p>
+            <img src="pic/cloud02.png" alt="cloud02" class="cloud4">
+            <p class="p01">於是阿寶就踏上了<br>舉辦土地公生日party之路</p>
+            <img src="pic/cloud01.png" alt="cloud01" class="cloud5">
+        </div>
+
+
+       
+         <h2 class="map_title">土地公地圖</h2>
+        <div class="mapmain">
+          <div class="map">
+            <img src="pic/mapmainview.png" alt="map" class="mappic">
+          </div>
+          <!-- <img src="pic/god.png" alt="god" class="god"> -->
+          <!-- 標註順序 -->
+          <input type="button"  onclick="location.href='1_fujin.html';" class="but-item but1" id="bu01" onclick="buton1()" value="0" />
+          <input type="button"  class="but-item but2" id="bu02" onclick="location.href='2_yongan.html';" value="1" />
+          <input type="button"  class="but-item but3" id="bu03" onclick="location.href='3_taichangshuitou.html' " value="2"/>
+          <input type="button"  class="but-item but4" id="bu04" onclick="location.href='4_changwu.html';" value="3" />
+          <input type="button"  class="but-item but5" id="bu05" onclick="location.href='5_yongxinzhuangtou.html'" value="4" />
+          <input type="button"  class="but-item but6" id="bu06" onclick="location.href='6_renhanfude.html'" value="5"/>
+          <input type="button"  class="but-item but7" id="bu07" onclick="location.href='7_dongchangaborigin.html'" value="6" />
+          <input type="button"  class="but-item but8" id="bu08" onclick="location.href='8_dongchang.html';" value="7" />
+         
+          <script src="button.js"></script>
+        </div>
+        
+        <h2 class="puzzlepice_title"></h2>
+        
+        <h2 class="puzzle_title"></h2>
+        <div class="puzzle">
+            <!-- <div class="box"></div> -->
+            <img src="pic/table.jpg" alt="table" class="table">
+        </div>
+        <h2 class="rule">祭祀規則</h2>
+        <p class="rule_content">
+            《歲時百問》說道「萬物生長此時，皆清潔而明淨，故謂之清明。」清明前後子孫會到祖先墓前，祭拜焚香，打掃墓園，表達慎終追遠之意。
+自古以來許多人為了表示誠意，會以三牲禮做為供品，其中三牲禮的「禮」和「醴」相通，禮最早的起源為「祭祀」、「祈福」之意。祭祀的牲禮還有四牲、五牲以及大、小副的區別，但一般以三牲較為常見。
+        </p>
+        <button class="bak" id="back" onclick="backtotop()"><i class="fa-solid fa-circle-arrow-up"></i></button>     
+    </div>
+     
+     
+
+        <script type="text/javascript">
+             function backtotop(){
+    but = document.getElementById('back');
+    document.documentElement.scrollTop = 0;
+}
+        </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+@function v($px) {
+  @return round($px / 1080 * 100) * 1vw
+}
+
+@mixin fc($j: flex-start, $a: center) {
+  display: flex;
+  justify-content: $j;
+  align-items: $a;
+}
+
+html, body{
+  @include fc(center);
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #39f;
+}
+
+section {
+  @include fc(center);
+  height: 50%;
+  width: 50%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #39f;
+}
+
+
+div{
+  box-sizing: border-box;
+}
+
+.main{
+  width: v(1000);
+  height: v(1000);
+  padding: v(10);
+  background: #fff;
+  // display: none;
+}
+
+.wrap{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.grid{
+  @include fc(center);
+  font-size: v(100);
+  font-weight: bold;
+  color: #fff;
+  position: absolute;
+  background: #ff6500;
+  transition: .3s ease;
+  &-active{
+    z-index: 1;
+    opacity: .8;
+    background: darken($color: #ff6500, $amount: 20)
+  }
+}

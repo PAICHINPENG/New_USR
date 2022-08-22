@@ -1,0 +1,329 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* -------------------------------------- */
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+body{
+    font-family: 微軟正黑體;
+    color: white;
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+    background-color: #e8dcbc;
+    font-size: 150%;
+
+
+}
+
+h2{
+    font-size: 300%;
+    font-weight: bold;
+    padding: 5%;
+    text-align: center;
+    color: #f5e5c7;
+}
+p{
+    padding:0% 10%;
+}
+.p01{
+    text-align: center;
+    padding-top: 30%;
+    padding-bottom: 30%;
+    padding-right: 5%;
+    padding-left: 5%;
+    font-weight: bold;
+}
+.wrap{
+    position: relative;
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url("pic/cloud01.png"),url("pic/cloud02.png"),url("pic/cloud01.png"),url("pic/cloud02.png"),url("pic/cloud01.png");
+    background-repeat: no-repeat;
+    background-size: 800px auto;
+    background-position:-400px 15%,right -400px top 1000px, -400px 28%,right -400px top 1700px, -400px 45%; */
+    background-color: #4c756f;
+    overflow: hidden;
+
+
+}
+.mainview{
+    display: none;
+}
+.story{
+    margin-bottom: 25%; 
+    position: relative;
+}
+.cloud1{
+    position: absolute;
+    width: 72%;
+    left: -40%;
+    top: 10%;
+}
+.cloud2{
+    position: absolute;
+    width: 72%;
+    right: -40%;
+    top: 30%;
+}
+.cloud3{
+    position: absolute;
+    width: 72%;
+    left: -40%;
+    top: 50%;
+}
+.cloud4{
+    position: absolute;
+    width: 72%;
+    right: -40%;
+    top:70%;
+}
+.cloud5{
+    position: absolute;
+    width: 72%;
+    left: -40%;
+    top: 90%;
+}
+
+/* 地圖 */
+
+.map{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+.mapmain{
+    position: relative;
+}
+
+input{
+    height: 50px;
+    width: 50px;
+    border:0;
+    /*ackground-color:white;
+    color:gold;*/
+    opacity:0.0;  
+}
+button{
+    border:0;
+    background-color:gold;
+    color:gold;
+    height: 50px;
+    width: 50px;
+}
+.but-item{
+    position: absolute;
+    left: 0%;
+    top: 0%;
+}
+.but1{
+    left: 67%;
+    top: 66%;
+}
+.but2{
+    left: 76%;
+    top: 40%;
+}
+.but3{
+    left: 56%;
+    top: 37%;
+}
+.but4{
+    left: 66%;
+    top: 15%;
+}
+.but5{
+    left: 43%;
+    top: 15%;
+}
+.but6{
+    left: 33%;
+    top: 37%;
+}
+.but7{
+    left: 22%;
+    top: 65%;
+}
+.but8{
+    left: 46%;
+    top: 78%;
+}
+
+
+
+.box{
+    width: 70%;
+    height: 700px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 3px 3px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* .bu01{
+    position: absolute;
+    margin-top:37%;
+    right: 23%;
+} */
+/* .location01{
+    position: relative;
+    margin-top:37%;
+    right: 23%;
+}
+.location02{
+    position: relative;
+    margin-top:22%;
+    right: 18%;
+} */
+
+.mappic{
+    
+    display: block;
+    margin: auto;
+    width: 80%;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+/* 碎片 */
+.puzzlepice{
+    width: 100%;
+}
+.pices{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.pli{
+    width: 10%;
+}
+.pice01{
+    height: 100px;
+    background-color: #fff;
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.puzzle{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.table{
+    position: relative;
+    border-radius: 25px;
+    border: 5px solid black;
+}
+
+
+.rule_content{
+    padding-top: -20px;
+    margin-bottom: 50px;
+}
+@media(max-width:768px){
+    .pli{
+        width: 33%;
+    }
+}
+/* @media(max-width:375px){
+    .mainview2{
+        display:none;
+    }
+    .mainview{
+        display: flex;
+    }
+    h2{
+        font-size: 150%;
+    }
+    .pli{
+        width: 33%;
+    }
+    .pice01{
+        height: 100px;
+        margin: 15px;
+    }
+    .box{
+        height: 300px;
+    }
+
+} */
+
+@media(max-width:400px){
+    .mainview2{
+        display:none;
+    }
+    .mainview{
+        display: flex;
+    }
+    h2{
+        font-size: 150%;
+    }
+    .pli{
+        width: 33%;
+    }
+    .pice01{
+        height: 100px;
+        margin: 15px;
+    }
+    .box{
+        height: 300px;
+    }
+}
+.circle{
+    display: flex;
+    justify-content: end;    
+}

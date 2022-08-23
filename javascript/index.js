@@ -33,7 +33,7 @@ function gridStyle (n, wn, hn) {
     let ww = parseFloat($('.wrap').css('width')) 
     let wh = parseFloat($('.wrap').css('height')) 
     let gw = (ww - gm * (wn - 1)) / wn /1.1
-    let gh = (wh - gm * (hn - 1)) / hn / 9.4
+    let gh = (wh - gm * (hn - 1)) / hn / 15
     let gl = (gw + gm) * (n % wn)
     let gt = (gh + gm) * Math.floor(n / wn)
     let style = {

@@ -134,7 +134,7 @@ function runnoB() {
                 btn.style.display = "none";
                 txtresult.innerHTML = goodsd + "個允杯<br>請觀看以下籤詩";
                 divineroom.style.display = "block";
-                divpic.src = "image/" + "87" + ".jpg";
+                divpic.src = "stick/" + finalsd + ".png";
                 if (finalsd >=50) {
                   console.log("上上");
                 }

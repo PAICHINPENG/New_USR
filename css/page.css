@@ -116,14 +116,35 @@ body{
 .godintro{
     padding: 3%;
 }
-
+ #btn{
+       
+                    display: none;
+                    outline: none;
+                    cursor: pointer;
+                    font-size: 14px;
+                    line-height: 1;
+                    border-radius: 500px;
+                    transition-property: background-color,border-color,color,box-shadow,filter;
+                    transition-duration: .3s;
+                    border: 1px solid transparent;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                    white-space: normal;
+                    font-weight: 700;
+                    text-align: center;
+                    padding: 17px 48px;
+                    color: #fff;
+                    background-color: #d65527;
+                    height: 48px;
+                    width: 100%;
+                    
+                
+    }
 @media screen and (max-width:800px){
     .draw{
     margin-left: 7%;
     }
-    /*#btn{
-        margin-left: 36%;
-    }*/
+  
  
      #divinetool{
         width: 320px;

@@ -40,7 +40,7 @@ function runno(){
 var err = 0;
 var max = 60;
 var min = 1;
-var draw = [1,36,41,54,58,66,83,99,101,108];
+var draw = [101,108];
 
 var rand = Math.floor(Math.random()*draw.length);
 var rValue = draw[rand];

@@ -119,11 +119,11 @@ body{
 
 @media screen and (max-width:800px){
     .draw{
-    margin-left: 20px;
+    margin-left: 7%;
     }
-    #btn{
+    /*#btn{
         margin-left: 36%;
-    }
+    }*/
  
      #divinetool{
         width: 320px;
@@ -142,9 +142,7 @@ body{
     .draw{
         margin-left: 28%;
     }
-    #btn{
-        margin-left:47%;
-    }
+ 
     .ss{
          margin-left:46%;
     }

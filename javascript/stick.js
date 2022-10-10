@@ -28,7 +28,7 @@ function startgo() {
 function startgoB(){
     if (isoverB =="y") {
       talB = 0;
-      intervalsdB = setInterval(function(){runnoB() },30);
+      intervalsdB = setInterval(function(){runnoB() },50);
       ImgA.style.display= 'block';
       ImgB.style.display= 'block';
     }

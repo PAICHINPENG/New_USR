@@ -28,7 +28,7 @@ function startgo() {
 function startgoB(){
     if (isoverB =="y") {
       talB = 0;
-      intervalsdB = setInterval(function(){runnoB() },30);
+      intervalsdB = setInterval(function(){runnoB() },50);
       ImgA.style.display= 'block';
       ImgB.style.display= 'block';
     }
@@ -40,7 +40,7 @@ function runno(){
 var err = 0;
 var max = 60;
 var min = 1;
-var draw = [101,108];
+var draw = [44,47,58,54,111,101,108];
 
 var rand = Math.floor(Math.random()*draw.length);
 var rValue = draw[rand];

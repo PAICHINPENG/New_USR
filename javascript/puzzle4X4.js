@@ -76,7 +76,7 @@ function initGrids () {
   for (let i = 0; i < gc.nn(); i++) {
     let { style, n, pos } = gridStyle(i, gc.wn, gc.hn)
     let el = document.createElement('div')
-    $(el).addClass('grid').data('n', n).data('pos', pos).appendTo('.wrap')
+    $(el).addClass('grid').data('n', n).data('pos', pos).appendTo('.wrap1')
     gv.grids.push(el)
     gv.styles.push({ style, n })
   }

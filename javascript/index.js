@@ -2,39 +2,8 @@ const gv = {
   styles: [],
   grids: []
 }
-function size(){
-    if (document.getElementById("3x3").value == "3")
-    {
 
-      const gc = {
-        wn: 3,
-        hn: 3,
-        pn: 1,
-        nn () {
-          return this.wn * this.hn
-        },
-        img () {
-          return `img_p/pintu1.png`
-        }
-      }
-
-    }
-    elseif(document.getElementById("4X4").value == "4"){
-
-      const gc = {
-        wn: 4,
-        hn: 4,
-        pn: 1,
-        nn () {
-          return this.wn * this.hn
-        },
-        img () {
-          return `img_p/pintu1.png`
-        }
-      }
-    }
-    elseif(document.getElementById("5X5").value == "5")
-    {
+  
       const gc = {
         wn: 5,
         hn: 5,
@@ -44,8 +13,7 @@ function size(){
         },
         img () {
           return `img_p/pintu1.png`
-        }
-      }
+      
     }
 
       

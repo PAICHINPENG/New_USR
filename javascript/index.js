@@ -3,7 +3,7 @@ const gv = {
   grids: []
 }
 function size(){
-    if (document.getElementById("3x3").value == 3)
+    if (document.getElementById("3x3").value == "3")
     {
 
       const gc = {
@@ -19,7 +19,7 @@ function size(){
       }
 
     }
-    elseif(document.getElementById("4X4").value == 4){
+    elseif(document.getElementById("4X4").value == "4"){
 
       const gc = {
         wn: 4,
@@ -33,7 +33,7 @@ function size(){
         }
       }
     }
-    elseif(document.getElementById("5X5").value == 5 )
+    elseif(document.getElementById("5X5").value == "5")
     {
       const gc = {
         wn: 5,

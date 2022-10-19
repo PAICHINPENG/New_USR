@@ -2,7 +2,12 @@ const gv = {
   styles: [],
   grids: []
 }
+function setsize($this){
+  var size = $this.previousElementSibling.value;
+  console.log(size);
 
+
+}
   
       const gc = {
         wn: 5,

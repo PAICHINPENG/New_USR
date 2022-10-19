@@ -29,9 +29,9 @@ mounted()
 function gridStyle (n, wn, hn) {
   if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
 
-    let gm = parseFloat($('.main').css('padding')) / 2
-    let ww = parseFloat($('.wrap').css('width')) 
-    let wh = parseFloat($('.wrap').css('height')) 
+    let gm = parseFloat($('.main1').css('padding')) / 2
+    let ww = parseFloat($('.wrap1').css('width')) 
+    let wh = parseFloat($('.wrap1').css('height')) 
     let gw = (ww - gm * (wn - 1)) / wn /1.1
     let gh = (wh - gm * (hn - 1)) / hn / 15
     let gl = (gw + gm) * (n % wn)
@@ -48,9 +48,9 @@ function gridStyle (n, wn, hn) {
 
 }else{
 
-  let gm = parseFloat($('.main').css('padding')) / 2
-  let ww = parseFloat($('.wrap').css('width')) 
-  let wh = parseFloat($('.wrap').css('height')) 
+  let gm = parseFloat($('.main1').css('padding')) / 2
+  let ww = parseFloat($('.wrap1').css('width')) 
+  let wh = parseFloat($('.wrap1').css('height')) 
   let gw = (ww - gm * (wn - 1)) / wn / 1.1
   let gh = (wh - gm * (hn - 1)) / hn * 0.33
   let gl = (gw + gm) * (n % wn)

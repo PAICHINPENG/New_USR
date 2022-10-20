@@ -2,11 +2,11 @@ const gv = {
   styles: [],
   grids: []
 }
-function setsize($this){
-  var size = $this.previousElementSibling.value;
+function setsize(){
+  var size = document.getElementById("size").value;
   console.log(size);
 
-
+   
 }
   
       const gc = {

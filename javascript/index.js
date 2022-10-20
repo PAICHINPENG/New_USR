@@ -10,8 +10,8 @@ function setsize(){
 }
   
       const gc = {
-        wn: 5,
-        hn: 5,
+        wn: size,
+        hn: size,
         pn: 1,
         nn () {
           return this.wn * this.hn

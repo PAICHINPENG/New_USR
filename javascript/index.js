@@ -6,24 +6,26 @@ function setsize(){
   var size = document.getElementById("size").value;
   console.log(size);
 
+  const gc = {
+    wn: size,
+    hn: size,
+    pn: 1,
+    nn () {
+      return this.wn * this.hn
+    },
+    img () {
+      return `img_p/pintu1.png`
+  
+}
+
+  
+
+}
+
    
 }
   
-      const gc = {
-        wn: size,
-        hn: size,
-        pn: 1,
-        nn () {
-          return this.wn * this.hn
-        },
-        img () {
-          return `img_p/pintu1.png`
-      
-    }
-
-      
-
-}
+     
 
 const mounted = function () {
   initGrids()
